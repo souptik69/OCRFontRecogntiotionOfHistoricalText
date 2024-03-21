@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  db:
+    container_name: nbb_rd_postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: Sl5BouGuIWhwSXig8Xi7
+      POSTGRES_DB: nbb_rd
+    volumes:
+      - ../postgres-data:/var/lib/postgresql/data
+    ports:
+      - "8432:5432"
+  streamlit:
+    container_name: nbb_rd_streamlit
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    restart: always
+    ports:
+      - "8050:80"

@@ -1,0 +1,5 @@
+Pillow
+streamlit
+psycopg2
+torchvision
+scikit-image~=0.18.1
