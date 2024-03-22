@@ -3,7 +3,7 @@
 ## Task
 - Modifying the Entity Transformer to predict text from NBB line images by using OCR, and predicting the font of each predicted alphabet at the same time .
 
-
+![HTR Model Architecture](Font&TextReport/figures/HTRModelArchitecture.png)
 
 
 ## Data
